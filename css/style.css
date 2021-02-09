@@ -113,6 +113,10 @@ thead tr:first-child th:first-child{}
 
 /*Req 8*/
 footer{
+  min-height: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
   width:100%;
   background:#000000;
   text-align:center;
