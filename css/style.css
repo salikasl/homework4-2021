@@ -25,11 +25,15 @@ tr{
 /*END STARTER CODE*/
 
 body{
+  font: 'Andika', sans-serif;
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
   background-position: center;
+  background-image: url("images/pigeon-background.JPEG");
+  background-repeat: no-repeat;
+  background-color: #dddddd;
 
   /*Req 1*/
 }
@@ -37,40 +41,64 @@ body{
 h1{
   color: #c12258;
   font-size: 2em;
+  margin: 0 auto;
+  line-height: 2;
 
   /*Req 2*/
 }
 
 p{
+  padding-top: 15px;
   /*Req 3*/
 }
 
 a{
+  font-size: 16px;
+  color: #c12258;
+  text-decoration-style: wavy;
   /*Req 4*/
 }
 
-/*Req 5*/
-/*Add selector and rule here*/
-
+*:focus {
+  border: 3px dashed #417243;
+  /*Req 5*/
+}
 
 /*Req 6a*/
 td{
-  
+  text-align: center;
+  border-top: 2px #000000;
+  padding: 10px;
 }
 
 /*Req 6b*/
 .colhead{
+  min-width: 125px;
+  padding: 10px;
   color: #FFFFFF;
+  margin: auto;
+  text-transform: uppercase;
+  background-color: #7e0820;
 
 }
+
 /*Req 6c*/
 .rowhead{
-
+  border: 2px #000000;
+  /* border-top: inherit; */
 }
 
 /*Req 6d*/
 /*Req 6e*/
+tr:nth-child(even) {
+  background-color: #d1d1d1;
+}
+
 /*Req 6f*/
+
+tr:hover {
+  background-color: rgba(126, 8, 32, 0.25);
+}
 
 
 /*Req 7*/
