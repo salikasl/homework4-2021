@@ -25,7 +25,7 @@ tr{
 /*END STARTER CODE*/
 
 body{
-  font: 'Andika', sans-serif;
+  font-family: 'Andika', sans-serif;
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
@@ -41,7 +41,7 @@ body{
 h1{
   color: #c12258;
   font-size: 2em;
-  margin: 0 auto;
+  text-align: center;
   line-height: 2;
 
   /*Req 2*/
@@ -65,27 +65,29 @@ a{
 }
 
 /*Req 6a*/
-td{
+td {
   text-align: center;
   border-top: 2px #000000;
   padding: 10px;
 }
 
 /*Req 6b*/
-.colhead{
+.colhead {
   min-width: 125px;
   padding: 10px;
   color: #FFFFFF;
+  vertical-align: middle;
   margin: auto;
   text-transform: uppercase;
   background-color: #7e0820;
-
 }
 
 /*Req 6c*/
-.rowhead{
-  border: 2px #000000;
-  /* border-top: inherit; */
+.rowhead {
+  border: 2px solid #000000;
+  border-left: inherit;
+  border-bottom: inherit;
+  padding: 10px;
 }
 
 /*Req 6d*/
@@ -103,12 +105,31 @@ tr:hover {
 
 /*Req 7*/
 table{
-    border: 2px solid #000000;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-radius: 10px;
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
 
-/*Add selectors and rules here*/
+thead tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child th {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+tr {
+  border-top: 2px solid #000000;
+}
+
 
 
 /*Req 8*/
