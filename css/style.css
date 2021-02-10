@@ -29,7 +29,7 @@ body{
   color: #000000;
   font-size: 16px;
   margin: 1.2em;
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
   background-image: url("../images/pigeon-background.JPEG");
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@ p{
 
 a{
   font-size: 16px;
-  color: #c12258;
+  color: #b21f50;
   text-decoration-style: wavy;
   /*Req 4*/
 }
